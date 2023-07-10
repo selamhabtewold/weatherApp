@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <video id="video-background" autoplay loop muted>
+        <source src="images/video (2).mp4" type="video/mp4">
+    </video>
+
+
+    <form id="search-form">
+        <button id="search-btn" type="button"><i class="fas fa-search"></i></button>
+
+        <input type="search" placeholder="   Enter location" id="search-input" required autocomplete="off" />
+
+        <br>
+    </form>
+
+
+    <main class="app-container">
+        
+        <div id="location">
+            <p>location</p>
+        </div>
+
+        <div id="temp">
+            <span id="tem-icon" class="fa-solid fa-cloud"></span>
+            <p>
+                <span id="temp-value">0</span>
+                <span id="temp-unit">&#176c</span>
+            </p>
+        </div>
+
+        <div id="climate">
+            <p>Weather Status</p>
+        </div>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
